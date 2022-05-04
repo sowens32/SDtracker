@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en"> 
+	<head>
+		<title>SDV Save File Tracker</title>
+		<meta name="description" content="4440 Project">
+		<meta name="author" content="Shelby Owens">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta charset="UTF-8">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="index.css">
+        <script src="index.js"></script>
+        
+	</head> 
+
+	<body>
+		<header>
+            <h1>Stardew Valley Save File Tracker</h1>
+		</header>
+		
+		
+		<main>
+            <div>
+                <label for="saveFile">Upload your save file:</label>
+                <input type="file" id="saveFile" name="saveFile" accept=".xml">
+            </div>
+			<div>
+				<p id="isUploaded" class="content">Here is the XML</p>
+			</div>
+			<div id="result">
+
+				<div id="craftR" class="room">
+					<h2>Craft Room Bundles</h2>
+
+					<div id="13" class="bund">
+						<h3>Spring Foraging Bundle</h3>
+						<img id="13img" src="img/Spring_Foraging_Bundle.png">
+						<p id="13com"></p>
+						<div id="13items">
+							<a href="https://stardewvalleywiki.com/Daffodil"><img src="img/Daffodil.png"></a>
+							<a href="https://stardewvalleywiki.com/Dandelion"><img src="img/Dandelion.png"></a>
+							<a href="https://stardewvalleywiki.com/Leek"><img src="img/Leek.png"></a>
+							<a href="https://stardewvalleywiki.com/Wild_Horseradish"><img src="img/Wild_Horseradish.png"></a>
+						</div>
+					</div>
+
+					<div id="14" class="bund">
+						<h3>Summer Foraging Bundle</h3>
+						<img id="14img" src="img/Summer_Foraging_Bundle.png">
+						<p id="14com"></p>
+						<div id="14items">
+							<a href="https://stardewvalleywiki.com/Grape"><img src="img/Grape.png"></a>
+							<a href="https://stardewvalleywiki.com/Spice_Berry"><img src="img/Spice_Berry.png"></a>
+							<a href="https://stardewvalleywiki.com/Sweet_Pea"><img src="img/Sweet_Pea.png"></a>
+						</div>
+					</div>
+
+					<div id="15" class="bund">
+						<h3>Fall Foraging Bundle</h3>
+						<img id="15img" src="img/Fall_Foraging_Bundle.png">
+						<p id="15com"></p>
+						<div id="15items">
+							<a href="https://stardewvalleywiki.com/Common_Mushroom"><img src="img/Common_Mushroom.png"></a>
+							<a href="https://stardewvalleywiki.com/Wild_Plum"><img src="img/Wild_Plum.png"></a>
+							<a href="https://stardewvalleywiki.com/Hazelnut"><img src="img/Hazelnut.png"></a>
+							<a href="https://stardewvalleywiki.com/Blackberry"><img src="img/Blackberry.png"></a>
+						</div>
+					</div>
+
+					<div id="16" class="bund">
+						<h3>Winter Foraging Bundle</h3>
+						<img id="16img" src="img/Winter_Foraging_Bundle.png">
+						<p id="16com"></p>
+						<div id="16items">
+							<a href="https://stardewvalleywiki.com/Winter_Root"><img src="img/Winter_Root.png"></a>
+							<a href="https://stardewvalleywiki.com/Crystal_Fruit"><img src="img/Crystal_Fruit.png"></a>
+							<a href="https://stardewvalleywiki.com/Snow_Yam"><img src="img/Snow_Yam.png"></a>
+							<a href="https://stardewvalleywiki.com/Crocus"><img src="img/Crocus.png"></a>
+						</div>
+					</div>
+
+					<div id="17" class="bund">
+						<h3>Construction Bundle</h3>
+						<img id="17img" src="img/Construction_Bundle.png">
+						<p id="17com"></p>
+						<div id="17items">
+							<a href="https://stardewvalleywiki.com/Wood"><img src="img/Wood.png" alt="99"></a>
+							<a href="https://stardewvalleywiki.com/Wood"><img src="img/Wood.png" alt="99"></a>
+							<a href="https://stardewvalleywiki.com/Stone"><img src="img/Stone.png"></a>
+							<a href="https://stardewvalleywiki.com/Hardwood"><img src="img/Hardwood.png"></a>
+						</div>
+					</div>
+
+					<div id="19" class="bund">
+						<h3>Exotic Foraging Bundle</h3>
+						<img id="19img" src="img/Exotic_Foraging_Bundle.png">
+						<p id="19com"></p>
+						<div id="19items">
+							<a href="https://stardewvalleywiki.com/Coconut"><img src="img/Coconut.png"></a>
+							<a href="https://stardewvalleywiki.com/Cactus_Fruit"><img src="img/Cactus_Fruit.png"></a>
+							<a href="https://stardewvalleywiki.com/Cave_Carrot"><img src="img/Cave_Carrot.png"></a>
+							<a href="https://stardewvalleywiki.com/Red_Mushroom"><img src="img/Red_Mushroom.png"></a>
+							<a href="https://stardewvalleywiki.com/Purple_Mushroom"><img src="img/Purple_Mushroom.png"></a>
+						</div>
+					</div>
+				</div>
+
+
+				<div id="pantryR" class="room">
+					<h2>Pantry Bundles</h2>
+
+					<div id="0" class="bund">
+						<h3>Spring Crops Bundle</h3>
+						<img id="0img" src="https://stardewvalleywiki.com/mediawiki/images/5/51/Spring_Crops_Bundle.png">
+						<p id="0com"></p>
+						<div id="0items">
+							<a href="https://stardewvalleywiki.com/Parsnip"><img src="https://stardewvalleywiki.com/mediawiki/images/d/db/Parsnip.png"></a>
+							<a href="https://stardewvalleywiki.com/Green_Bean"><img src="https://stardewvalleywiki.com/mediawiki/images/5/5c/Green_Bean.png"></a>
+							<a href="https://stardewvalleywiki.com/Cauliflower"><img src="https://stardewvalleywiki.com/mediawiki/images/a/aa/Cauliflower.png"></a>
+							<a href="https://stardewvalleywiki.com/Potato"><img src="https://stardewvalleywiki.com/mediawiki/images/c/c2/Potato.png"></a>
+						</div>
+					</div>
+
+					<div id="1" class="bund">
+						<h3>Summer Crops Bundle</h3>
+						<img id="1img" src="https://stardewvalleywiki.com/mediawiki/images/2/27/Summer_Crops_Bundle.png">
+						<p id="1com"></p>
+						<div id="1items">
+							<a href="https://stardewvalleywiki.com/Tomato"><img src="https://stardewvalleywiki.com/mediawiki/images/9/9d/Tomato.png"></a>
+							<a href="https://stardewvalleywiki.com/Hot_Pepper"><img src="https://stardewvalleywiki.com/mediawiki/images/f/f1/Hot_Pepper.png"></a>
+							<a href="https://stardewvalleywiki.com/Blueberry"><img src="https://stardewvalleywiki.com/mediawiki/images/9/9e/Blueberry.png"></a>
+							<a href="https://stardewvalleywiki.com/Melon"><img src="https://stardewvalleywiki.com/mediawiki/images/1/19/Melon.png"></a>
+						</div>
+					</div>
+
+					<div id="2" class="bund">
+						<h3>Fall Crops Bundle</h3>
+						<img id="2img" src="https://stardewvalleywiki.com/mediawiki/images/0/0d/Fall_Crops_Bundle.png">
+						<p id="2com"></p>
+						<div id="2items">
+							<a href="https://stardewvalleywiki.com/Corn"><img src="https://stardewvalleywiki.com/mediawiki/images/f/f8/Corn.png"></a>
+							<a href="https://stardewvalleywiki.com/Eggplant"><img src="https://stardewvalleywiki.com/mediawiki/images/8/8f/Eggplant.png"></a>
+							<a href="https://stardewvalleywiki.com/Pumpkin"><img src="https://stardewvalleywiki.com/mediawiki/images/6/64/Pumpkin.png"></a>
+							<a href="https://stardewvalleywiki.com/Yam"><img src="https://stardewvalleywiki.com/mediawiki/images/5/52/Yam.png"></a>
+						</div>
+					</div>
+
+					<div id="3" class="bund">
+						<h3>Quality Crops Bundle</h3>
+						<img id="3img" src="https://stardewvalleywiki.com/mediawiki/images/8/86/Quality_Crops_Bundle.png">
+						<p id="3com"></p>
+						<div id="3items">
+							<a href="https://stardewvalleywiki.com/Parsnip"><img src="https://stardewvalleywiki.com/mediawiki/images/d/db/Parsnip.png"></a>
+							<a href="https://stardewvalleywiki.com/Melon"><img src="https://stardewvalleywiki.com/mediawiki/images/1/19/Melon.png"></a>
+							<a href="https://stardewvalleywiki.com/Corn"><img src="https://stardewvalleywiki.com/mediawiki/images/f/f8/Corn.png"></a>
+						</div>
+					</div>
+
+					<div id="4" class="bund">
+						<h3>Animal Bundle</h3>
+						<img id="4img" src="https://stardewvalleywiki.com/mediawiki/images/5/52/Animal_Bundle.png">
+						<p id="4com"></p>
+						<div id="4items">
+							<a href="https://stardewvalleywiki.com/Large_Milk"><img src="https://stardewvalleywiki.com/mediawiki/images/6/67/Large_Milk.png"></a>
+							<a href="https://stardewvalleywiki.com/Large_Egg"><img src="https://stardewvalleywiki.com/mediawiki/images/5/5d/Large_Egg.png"></a>
+							<a href="https://stardewvalleywiki.com/Large_Goat_Milk"><img src="https://stardewvalleywiki.com/mediawiki/images/f/f2/Large_Goat_Milk.png"></a>
+							<a href="https://stardewvalleywiki.com/Wool"><img src="https://stardewvalleywiki.com/mediawiki/images/3/34/Wool.png"></a>
+							<a href="https://stardewvalleywiki.com/Duck_Egg"><img src="https://stardewvalleywiki.com/mediawiki/images/3/31/Duck_Egg.png"></a>
+						</div>
+					</div>
+
+					<div id="5" class="bund">
+						<h3>Artisan Bundle</h3>
+						<img id="5img" src="https://stardewvalleywiki.com/mediawiki/images/7/7a/Artisan_Bundle.png">
+						<p id="5com"></p>
+						<div id="5items">
+							<a href="https://stardewvalleywiki.com/Truffle_Oil"><img src="https://stardewvalleywiki.com/mediawiki/images/3/3d/Truffle_Oil.png"></a>
+							<a href="https://stardewvalleywiki.com/Cloth"><img src="https://stardewvalleywiki.com/mediawiki/images/5/51/Cloth.png"></a>
+							<a href="https://stardewvalleywiki.com/Goat_Cheese"><img src="https://stardewvalleywiki.com/mediawiki/images/c/c8/Goat_Cheese.png"></a>
+							<a href="https://stardewvalleywiki.com/Honey"><img src="https://stardewvalleywiki.com/mediawiki/images/c/c6/Honey.png"></a>
+							<a href="https://stardewvalleywiki.com/Jelly"><img src="https://stardewvalleywiki.com/mediawiki/images/0/05/Jelly.png"></a>
+						</div>
+					</div>
+				</div>
+
+
+				<div id="fishR" class="room">
+					<h2>Fish Tank Bundles</h2>
+
+					<div id="6" class="bund">
+						<h3>River Fish Bundle</h3>
+						<img id="6img" src="https://stardewvalleywiki.com/mediawiki/images/c/c6/River_Fish_Bundle.png">
+						<p id="6com"></p>
+						<div id="6items">
+							<a href="https://stardewvalleywiki.com/Sunfish"><img src="https://stardewvalleywiki.com/mediawiki/images/5/56/Sunfish.png"></a>
+							<a href="https://stardewvalleywiki.com/Catfish"><img src="https://stardewvalleywiki.com/mediawiki/images/9/99/Catfish.png"></a>
+							<a href="https://stardewvalleywiki.com/Shad"><img src="https://stardewvalleywiki.com/mediawiki/images/e/ef/Shad.png"></a>
+							<a href="https://stardewvalleywiki.com/Tiger_Trout"><img src="https://stardewvalleywiki.com/mediawiki/images/0/01/Tiger_Trout.png"></a>
+						</div>
+					</div>
+
+					<div id="7" class="bund">
+						<h3>Lake Fish Bundle</h3>
+						<img id="7img" src="https://stardewvalleywiki.com/mediawiki/images/4/46/Lake_Fish_Bundle.png">
+						<p id="7com"></p>
+						<div id="7items">
+							<a href="https://stardewvalleywiki.com/Largemouth_Bass"><img src="https://stardewvalleywiki.com/mediawiki/images/1/11/Largemouth_Bass.png"></a>
+							<a href="https://stardewvalleywiki.com/Carp"><img src="https://stardewvalleywiki.com/mediawiki/images/a/a8/Carp.png"></a>
+							<a href="https://stardewvalleywiki.com/Bullhead"><img src="https://stardewvalleywiki.com/mediawiki/images/d/db/Bullhead.png"></a>
+							<a href="https://stardewvalleywiki.com/Sturgeon"><img src="https://stardewvalleywiki.com/mediawiki/images/4/42/Sturgeon.png"></a>
+						</div>
+					</div>
+
+					<div id="8" class="bund">
+						<h3>Ocean Fish Bundle</h3>
+						<img id="8img" src="https://stardewvalleywiki.com/mediawiki/images/a/ac/Ocean_Fish_Bundle.png">
+						<p id="8com"></p>
+						<div id="8items">
+							<a href="https://stardewvalleywiki.com/Sardine"><img src="https://stardewvalleywiki.com/mediawiki/images/0/04/Sardine.png"></a>
+							<a href="https://stardewvalleywiki.com/Tuna"><img src="https://stardewvalleywiki.com/mediawiki/images/c/c5/Tuna.png"></a>
+							<a href="https://stardewvalleywiki.com/Red_Snapper"><img src="https://stardewvalleywiki.com/mediawiki/images/d/d3/Red_Snapper.png"></a>
+							<a href="https://stardewvalleywiki.com/Tilapia"><img src="https://stardewvalleywiki.com/mediawiki/images/7/73/Tilapia.png"></a>
+						</div>
+					</div>
+
+					<div id="9" class="bund">
+						<h3>Night Fishing Bundle</h3>
+						<img id="9img" src="https://stardewvalleywiki.com/mediawiki/images/a/a7/Night_Fishing_Bundle.png">
+						<p id="9com"></p>
+						<div id="9items">
+							<a href="https://stardewvalleywiki.com/Walleye"><img src="https://stardewvalleywiki.com/mediawiki/images/0/05/Walleye.png"></a>
+							<a href="https://stardewvalleywiki.com/Bream"><img src="https://stardewvalleywiki.com/mediawiki/images/8/82/Bream.png"></a>
+							<a href="https://stardewvalleywiki.com/Eel"><img src="https://stardewvalleywiki.com/mediawiki/images/9/91/Eel.png"></a>
+						</div>
+					</div>
+
+					<div id="11" class="bund">
+						<h3>Crab Pot Bundle</h3>
+						<img id="11img" src="https://stardewvalleywiki.com/mediawiki/images/2/22/Crab_Pot_Bundle.png">
+						<p id="11com"></p>
+						<div id="11items">
+							<a href="https://stardewvalleywiki.com/Lobster"><img src="https://stardewvalleywiki.com/mediawiki/images/9/9f/Lobster.png"></a>
+							<a href="https://stardewvalleywiki.com/Crayfish"><img src="https://stardewvalleywiki.com/mediawiki/images/5/53/Crayfish.png"></a>
+							<a href="https://stardewvalleywiki.com/Crab"><img src="https://stardewvalleywiki.com/mediawiki/images/6/63/Crab.png"></a>
+							<a href="https://stardewvalleywiki.com/Cockle"><img src="https://stardewvalleywiki.com/mediawiki/images/a/ad/Cockle.png"></a>
+							<a href="https://stardewvalleywiki.com/Mussel"><img src="https://stardewvalleywiki.com/mediawiki/images/a/aa/Mussel.png"></a>
+						</div>
+					</div>
+
+					<div id="10" class="bund">
+						<h3>Speciality Fish</h3>
+						<img id="10img" src="https://stardewvalleywiki.com/mediawiki/images/0/03/Specialty_Fish_Bundle.png">
+						<p id="10com"></p>
+						<div id="10items">
+							<a href="https://stardewvalleywiki.com/Pufferfish"><img src="https://stardewvalleywiki.com/mediawiki/images/b/ba/Pufferfish.png"></a>
+							<a href="https://stardewvalleywiki.com/Ghostfish"><img src="https://stardewvalleywiki.com/mediawiki/images/7/72/Ghostfish.png"></a>
+							<a href="https://stardewvalleywiki.com/Sandfish"><img src="https://stardewvalleywiki.com/mediawiki/images/b/bb/Sandfish.png"></a>
+							<a href="https://stardewvalleywiki.com/Woodskip"><img src="https://stardewvalleywiki.com/mediawiki/images/9/97/Woodskip.png"></a>
+						</div>
+					</div>
+				</div>
+
+
+				<div id="boilerR" class="room">
+					<h2>Boiler Room Bundles</h2>
+
+					<div id="20" class="bund">
+						<h3>Blacksmith's Bundle</h3>
+						<img id="20img" src="https://stardewvalleywiki.com/mediawiki/images/c/c8/Blacksmith_Bundle.png">
+						<p id="20com"></p>
+						<div id="20items">
+							<a href="https://stardewvalleywiki.com/Copper_Bar"><img src="https://stardewvalleywiki.com/mediawiki/images/f/f1/Copper_Bar.png"></a>
+							<a href="https://stardewvalleywiki.com/Iron_Bar"><img src="https://stardewvalleywiki.com/mediawiki/images/6/6c/Iron_Bar.png"></a>
+							<a href="https://stardewvalleywiki.com/Gold_Bar"><img src="https://stardewvalleywiki.com/mediawiki/images/4/4e/Gold_Bar.png"></a>
+						</div>
+					</div>
+
+					<div id="21" class="bund">
+						<h3>Geologist's Bundle</h3>
+						<img id="21img" src="https://stardewvalleywiki.com/mediawiki/images/6/68/Geologist%27s_Bundle.png">
+						<p id="21com"></p>
+						<div id="21items">
+							<a href="https://stardewvalleywiki.com/Quartz"><img src="https://stardewvalleywiki.com/mediawiki/images/c/cf/Quartz.png"></a>
+							<a href="https://stardewvalleywiki.com/Earth_Crystal"><img src="https://stardewvalleywiki.com/mediawiki/images/7/74/Earth_Crystal.png"></a>
+							<a href="https://stardewvalleywiki.com/Frozen_Tear"><img src="https://stardewvalleywiki.com/mediawiki/images/e/ec/Frozen_Tear.png"></a>
+							<a href="https://stardewvalleywiki.com/Fire_Quartz"><img src="https://stardewvalleywiki.com/mediawiki/images/5/5b/Fire_Quartz.png"></a>
+						</div>
+					</div>
+
+					<div id="22" class="bund">
+						<h3>Adventurer's Bundle</h3>
+						<img id="22img" src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Adventurer%27s_Bundle.png">
+						<p id="22com"></p>
+						<div id="22items">
+							<a href="https://stardewvalleywiki.com/Solar_Essence"><img src="https://stardewvalleywiki.com/mediawiki/images/f/f4/Solar_Essence.png"></a>
+							<a href="https://stardewvalleywiki.com/Void_Essence"><img src="https://stardewvalleywiki.com/mediawiki/images/1/1f/Void_Essence.png"></a>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div id="bulletinR" class="room">
+					<h2>Bulletin Board Bundles</h2>
+
+					<div id="31" class="bund">
+						<h3>Chef's Bundle</h3>
+						<img id="31img" src="https://stardewvalleywiki.com/mediawiki/images/e/ea/Chef%27s_Bundle.png">
+						<p id="31com"></p>
+						<div id="31items">
+							<a href="https://stardewvalleywiki.com/Maple_Syrup"><img src="https://stardewvalleywiki.com/mediawiki/images/6/6a/Maple_Syrup.png"></a>
+							<a href="https://stardewvalleywiki.com/Fiddlehead_Fern"><img src="https://stardewvalleywiki.com/mediawiki/images/4/48/Fiddlehead_Fern.png"></a>
+							<a href="https://stardewvalleywiki.com/Truffle"><img src="https://stardewvalleywiki.com/mediawiki/images/f/f2/Truffle.png"></a>
+							<a href="https://stardewvalleywiki.com/Poppy"><img src="https://stardewvalleywiki.com/mediawiki/images/3/37/Poppy.png"></a>
+							<a href="https://stardewvalleywiki.com/Maki_Roll"><img src="https://stardewvalleywiki.com/mediawiki/images/b/b6/Maki_Roll.png"></a>
+							<a href="https://stardewvalleywiki.com/Fried_Egg"><img src="https://stardewvalleywiki.com/mediawiki/images/1/18/Fried_Egg.png"></a>
+						</div>
+					</div>
+
+					<div id="34" class="bund">
+						<h3>Dye Bundle</h3>
+						<img id="34img" src="https://stardewvalleywiki.com/mediawiki/images/a/a5/Dye_Bundle.png">
+						<p id="34com"></p>
+						<div id="34items">
+							<a href="https://stardewvalleywiki.com/Red_Mushroom"><img src="https://stardewvalleywiki.com/mediawiki/images/e/e1/Red_Mushroom.png"></a>
+							<a href="https://stardewvalleywiki.com/Sea_Urchin"><img src="https://stardewvalleywiki.com/mediawiki/images/e/e7/Sea_Urchin.png"></a>
+							<a href="https://stardewvalleywiki.com/Sunflower"><img src="https://stardewvalleywiki.com/mediawiki/images/8/81/Sunflower.png"></a>
+							<a href="https://stardewvalleywiki.com/Duck_Feather"><img src="https://stardewvalleywiki.com/mediawiki/images/f/f9/Duck_Feather.png"></a>
+							<a href="https://stardewvalleywiki.com/Aquamarine"><img src="https://stardewvalleywiki.com/mediawiki/images/a/a2/Aquamarine.png"></a>
+							<a href="https://stardewvalleywiki.com/Red_Cabbage"><img src="https://stardewvalleywiki.com/mediawiki/images/2/2d/Red_Cabbage.png"></a>
+						</div>
+					</div>
+
+					<div id="32" class="bund">
+						<h3>Field Research Bundle</h3>
+						<img id="32img" src="https://stardewvalleywiki.com/mediawiki/images/8/86/Field_Research_Bundle.png">
+						<p id="32com"></p>
+						<div id="32items">
+							<a href="https://stardewvalleywiki.com/Purple_Mushroom"><img src="https://stardewvalleywiki.com/mediawiki/images/4/4b/Purple_Mushroom.png"></a>
+							<a href="https://stardewvalleywiki.com/Nautilus_Shell"><img src="https://stardewvalleywiki.com/mediawiki/images/a/a4/Nautilus_Shell.png"></a>
+							<a href="https://stardewvalleywiki.com/Chub"><img src="https://stardewvalleywiki.com/mediawiki/images/b/bd/Chub.png"></a>
+							<a href="https://stardewvalleywiki.com/Frozen_Geode"><img src="https://stardewvalleywiki.com/mediawiki/images/b/bf/Frozen_Geode.png"></a>
+						</div>
+					</div>
+
+					<div id="35" class="bund">
+						<h3>Fodder Bundle</h3>
+						<img id="35img" src="https://stardewvalleywiki.com/mediawiki/images/3/32/Fodder_Bundle.png">
+						<p id="35com"></p>
+						<div id="35items">
+							<a href="https://stardewvalleywiki.com/Wheat"><img src="https://stardewvalleywiki.com/mediawiki/images/e/e2/Wheat.png"></a>
+							<a href="https://stardewvalleywiki.com/Hay"><img src="https://stardewvalleywiki.com/mediawiki/images/a/aa/Hay.png"></a>
+							<a href="https://stardewvalleywiki.com/Apple"><img src="https://stardewvalleywiki.com/mediawiki/images/7/7d/Apple.png"></a>
+						</div>
+					</div>
+
+					<div id="33" class="bund">
+						<h3>Enchanter's Bundle</h3>
+						<img id="33img" src="https://stardewvalleywiki.com/mediawiki/images/6/69/Enchanter%27s_Bundle.png">
+						<p id="33com"></p>
+						<div id="33items">
+							<a href="https://stardewvalleywiki.com/Oak_Resin"><img src="https://stardewvalleywiki.com/mediawiki/images/4/40/Oak_Resin.png"></a>
+							<a href="https://stardewvalleywiki.com/Wine"><img src="https://stardewvalleywiki.com/mediawiki/images/6/69/Wine.png"></a>
+							<a href="https://stardewvalleywiki.com/Rabbit%27s_Foot"><img src="https://stardewvalleywiki.com/mediawiki/images/c/ca/Rabbit%27s_Foot.png"></a>
+							<a href="https://stardewvalleywiki.com/Pomegranate"><img src="https://stardewvalleywiki.com/mediawiki/images/1/1b/Pomegranate.png"></a>
+						</div>
+					</div>
+				</div>
+
+				<div id="vaultR" class="room">
+					<h2>Vault</h2>
+
+					<div id="23" class="bund">
+						<h3>2,500 Bundle</h3>
+						<img id="23img" src="https://stardewvalleywiki.com/mediawiki/images/e/e2/2500_Bundle.png">
+						<p id="23com"></p>
+						<div id="23items">
+
+						</div>
+					</div>
+
+					<div id="24" class="bund">
+						<h3>5,000 Bundle</h3>
+						<img id="24img" src="https://stardewvalleywiki.com/mediawiki/images/1/17/5000_Bundle.png">
+						<p id="24com"></p>
+						<div id="24items">
+
+						</div>
+					</div>
+
+					<div id="25" class="bund">
+						<h3>10,000 Bundle</h3>
+						<img id="25img" src="https://stardewvalleywiki.com/mediawiki/images/1/11/10000_Bundle.png">
+						<p id="25com"></p>
+						<div id="25items">
+							
+						</div>
+					</div>
+
+					<div id="26" class="bund">
+						<h3>25,000 Bundle</h3>
+						<img id="26img" src="https://stardewvalleywiki.com/mediawiki/images/a/a7/25000_Bundle.png">
+						<p id="26com"></p>
+						<div id="26items">
+							
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</main>
+
+		<footer>
+			<a href="https://validator.w3.org">Validate HTML</a>
+			<a href="https://jigsaw.w3.org/css-validator">Validate CSS</a>
+		</footer>
+
+	</body>
+</html>

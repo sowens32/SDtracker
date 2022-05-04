@@ -1,0 +1,25 @@
+#result {
+    display: none;
+}
+
+.room {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.room > h2 {
+    flex: 1 100%;
+}
+
+.bund {
+    flex: 2 auto;
+    width: 275px;
+
+}
+
+p > img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+}
